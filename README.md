@@ -29,7 +29,11 @@ By completing these tasks, you will learn:
 
 1. **Install dependencies:**
    ```bash
+   python3 -m venv .venv
+   source .venv/bin/activate
    pip install -r requirements.txt
+   ...
+   deactivate
    ```
 
 2. **Configure API access:**
