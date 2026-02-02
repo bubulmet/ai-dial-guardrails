@@ -1,20 +1,12 @@
-import asyncio
+# from tasks.t_1.prompt_injection import main
+# from tasks.t_2.input_llm_based_validation import main
+# from tasks.t_3.output_llm_based_validation import main
+from tasks.t_3.streaming_pii_guardrail import main
 
-# from task.t1.no_grounding import main
-# if __name__ == "__main__":
-#     asyncio.run(main())
-
-# from task.t2.input_api_based import main
-# if __name__ == "__main__":
-#     main()
-
-# from task.t2.input_vector_based import main
-# if __name__ == "__main__":
-#     asyncio.run(main())
-
-from task.t3.in_out_grounding import main
 if __name__ == "__main__":
-    asyncio.run(main())
+    # main()
+    # main(soft_response=False)
+    main(presidio=False)
 
-# Start the user service: docker-compose up -d
+
 # python starter.py
